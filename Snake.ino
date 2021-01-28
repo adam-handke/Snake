@@ -317,8 +317,11 @@ void loop() {
     tone(pin_piezo, 330, 200);
     delay(300);
     tone(pin_piezo, 392, 200);
-    delay(1000);
     
+    while(key != '0'){
+      key = keypad.waitForKey();
+    };
+    delay(300);
     game_reset();
   }
   else if(key == '0' || failure == true){
@@ -332,8 +335,11 @@ void loop() {
     tone(pin_piezo, 440, 100);
     delay(200);
     tone(pin_piezo, 233, 100);
-    delay(1000);
     
+    while(key != '0'){
+      key = keypad.waitForKey();
+    };
+    delay(300);
     game_reset();
   }
   else if(key == '2'){
