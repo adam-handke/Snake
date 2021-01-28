@@ -85,7 +85,7 @@ byte snake_down_food_up[] = {
   B11111
 };
 
-//ketpad init
+//keypad init
 const int ROW_NUM = 4; //four rows
 const int COLUMN_NUM = 3; //three columns (ignoring the 4th)
 char keys[ROW_NUM][COLUMN_NUM] = {
@@ -306,7 +306,7 @@ void loop() {
   }
   Serial.println(key); //DEBUG / MOVE LOG
   
-  if(score >= MAX_LENGTH-1){
+  if(score >= MAX_LENGTH){
     //WIN
     tone(pin_piezo, 392, 200);
     delay(300);
