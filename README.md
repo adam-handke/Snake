@@ -3,9 +3,16 @@
 
 ### Features
 - Simple snake game for Arduino UNO.
-- 4x14 Snake game on a 16x2 LCD display.
+- 14x4 Snake game on a 16x2 LCD display.
 - Nice sound effects!
 - Can you win by reaching 42 points?
+
+### Controls
+- 2 - up
+- 6 - right
+- 8 - down
+- 4 - left
+- 0 - restart
 
 ### Requirements
 - Arduino UNO;
